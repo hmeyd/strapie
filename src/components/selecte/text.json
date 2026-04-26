@@ -1,0 +1,95 @@
+{
+  "collectionName": "components_selecte_texts",
+  "info": {
+    "displayName": "text",
+    "icon": "book"
+  },
+  "options": {},
+  "attributes": {
+    "titre": {
+      "type": "string"
+    },
+    "subtitre": {
+      "type": "string"
+    },
+    "riche_text": {
+      "type": "blocks"
+    },
+    "numbre_decimal": {
+      "type": "decimal"
+    },
+    "numbre_entier": {
+      "type": "integer"
+    },
+    "date_fin": {
+      "type": "datetime"
+    },
+    "date_debit": {
+      "type": "datetime"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "media_principale": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "media_secondaire": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "single_media": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "annonce": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::annonce.annonce"
+    },
+    "bool_princpale": {
+      "type": "boolean"
+    },
+    "bool": {
+      "type": "boolean"
+    },
+    "json": {
+      "type": "json"
+    },
+    "email": {
+      "type": "email"
+    },
+    "passe_word": {
+      "type": "password"
+    },
+    "enum_type": {
+      "type": "enumeration",
+      "enum": [
+        "gauche",
+        "droite"
+      ]
+    },
+    "riche_marck": {
+      "type": "richtext"
+    }
+  },
+  "config": {}
+}
